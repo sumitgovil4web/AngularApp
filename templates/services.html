@@ -1,0 +1,44 @@
+<div class="services" id="services">
+     <section>
+       <div class="container-fluid">
+         <div class="container">
+           <header>
+             <div class="row">
+               <div class="col-sm-12">
+                 Services
+               </div><!-- /.col-sm-12 -->
+             </div><!-- /.row -->
+           </header>
+
+           <article>
+             <div class="row">
+               <div ng-repeat = "service in services">
+               <div class="col-sm-4 service_offered">
+                 <div class="panel" ng-click="displayDetails()">
+                   <div class="panel-body service_pic">
+                     <img class="img-responsive" ng-src="../images/services/{{service.url}}" alt="{{service.name}}">
+                   </div><!-- /.panel-body -->
+                   <div class="panel-footer text-center">
+                     <h3>{{service.name}}</h3>
+                     <p>{{service.summary}}
+                     </p>
+                   </div><!-- /.panel-footer -->
+                 </div><!-- /.panel -->
+               </div><!-- /.col-sm-4 -->
+             </div><!-- ng-repeat -->
+
+             </div><!-- /.row -->
+           </article>
+
+           <footer>
+             <div class="row">
+               <div class="col-sm-12">
+                 <button class="btn btn-default">Learn More</button>
+               </div><!-- /.col-sm-12 -->
+             </div><!-- /.row -->
+           </footer>
+
+         </div><!-- /.container -->
+       </div><!-- /.container-fluid -->
+     </section>
+   </div>

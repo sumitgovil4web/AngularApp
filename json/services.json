@@ -1,0 +1,56 @@
+[
+  {
+    "id" : 1,
+    "name" : "Web Designing",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "Web_designing.jpg"
+  },
+  {
+    "id" : 2,
+    "name" : "UX Consulting",
+    "summary" : "Best UX Designing achieved through experience",
+    "url" : "UX_Consulting.jpg"
+  },
+  {
+    "id" : 3,
+    "name" : "Web Development",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "Web_development.jpg"
+  },
+  {
+    "id" : 4,
+    "name" : "Server Side Programming",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "UX_Consulting.jpg"
+  },
+  {
+    "id" : 5,
+    "name" : "Course Work",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "Course_work.jpg"
+  },
+  {
+    "id" : 6,
+    "name" : "IT Consulting",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "IT_consulting.jpg"
+  },
+  {
+    "id" : 7,
+    "name" : "Search Engine Optimization",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "SEO.jpg"
+  },
+  {
+    "id" : 8,
+    "name" : "Branding",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "Branding.jpg"
+  },
+  {
+    "id" : 9,
+    "name" : "Social Media Presence",
+    "summary" : "One-stop solution for all your web designing needs may it be for Desktop, Tablet or Phone",
+    "url" : "Social_media.jpg"
+  }
+]

@@ -1,0 +1,65 @@
+<div class="container">
+  <h2>Contacts</h2>
+  <span class="pull-right">
+    <button class="btn btn-large btn-primary" ng-hide="addContactForm" ng-click="showAddContactForm()">
+      Add Contact
+    </button>
+    <button class="btn btn-large btn-danger" ng-show="addContactForm" ng-click="hideAddContactForm()">
+      Hide Contact
+    </button>
+  </span>
+    <div class="row contactsAddForm" ng-show="addContactForm">
+      <div class="col-sm-12 profile_summary">
+        <form name="contactForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="firstname" placeholder="First Name..." ng-model="firstname" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="middlename" placeholder="Middle Name..." ng-model="middlename">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name..." ng-model="lastname" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Email Address..." ng-model="email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="remarks" placeholder="Remarks..." ng-model="remarks" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" ng-click="addContact()">Add Contact</button>
+        </form>
+      </div><!-- /.col-sm-12 -->
+    </div><!-- /.row -->
+
+  <p>The contacts are being loaded from Firebase</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th width="200px">First Name</th>
+        <th width="220px">Last Name</th>
+        <th width="25%">Email</th>
+        <th width="25%">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="contact in contacts">
+        <td><a ng-click="showContactDetails(contact)">{{contact.name.firstname}}</a></td>
+        <td>{{contact.name.lastname}}</td>
+        <td>{{contact.email}}</td>
+        <td>
+          <button class="btn btn-sm btn-primary">Edit</button>
+          <button class="btn btn-sm btn-danger">Delete</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="panel contactDetails" ng-show="contactClicked">
+    <button class="btn btn-xs btn-danger pull-right" ng-click="hideContactDetails()">-</button>
+    <h5>Name: {{firstname}} {{middlename}} {{lastname}}</h5>
+    <h5>Email: {{email}}</h5>
+    <h5>Remarks: {{remarks}}</h5>
+
+  </div>
+</div>
